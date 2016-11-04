@@ -1,6 +1,7 @@
 GCOV_PROFILE := y
 
 subdir-ccflags-y := -Werror
+subdir-ccflags-y += -Wno-unused-const-variable
 
 # Tegra platform Support
 snd-soc-tegra-alt-pcm-objs := tegra_pcm_alt.o

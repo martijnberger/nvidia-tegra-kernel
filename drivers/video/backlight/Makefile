@@ -3,6 +3,8 @@
 GCOV_PROFILE := y
 
 ccflags-y += -Werror
+ccflags-y += -Wno-misleading-indentation
+
 obj-$(CONFIG_LCD_AMS369FG06)		+= ams369fg06.o
 obj-$(CONFIG_LCD_CLASS_DEVICE)		+= lcd.o
 obj-$(CONFIG_LCD_CORGI)			+= corgi_lcd.o

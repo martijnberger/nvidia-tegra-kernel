@@ -4,6 +4,7 @@ ccflags-y += -Idrivers/gpu/nvgpu
 ccflags-y += -Idrivers/video/tegra/host
 ccflags-y += -Idrivers/devfreq
 ccflags-y += -Wno-multichar
+ccflags-y += -Wno-misleading-indentation
 ccflags-y += -Werror
 
 ifeq ($(CONFIG_ARCH_TEGRA_18x_SOC),y)

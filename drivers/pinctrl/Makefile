@@ -2,6 +2,7 @@
 GCOV_PROFILE := y
 
 ccflags-y += -Werror
+ccflags-y += -Wno-unused-const-variable
 ccflags-$(CONFIG_DEBUG_PINCTRL)	+= -DDEBUG
 
 obj-$(CONFIG_PINCTRL)		+= core.o pinctrl-utils.o

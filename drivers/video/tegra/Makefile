@@ -1,6 +1,8 @@
 GCOV_PROFILE := y
 
 subdir-ccflags-y := -Werror
+subdir-ccflags-y += -Wno-misleading-indentation
+subdir-ccflags-y += -Wno-unused-const-variable
 subdir-ccflags-y += -I$(srctree)/drivers/platform/tegra/include
 
 EXTRA_CFLAGS += -Idrivers/video/tegra/host

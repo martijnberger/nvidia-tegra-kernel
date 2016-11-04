@@ -6,6 +6,9 @@
 GCOV_PROFILE := y
 
 subdir-ccflags-y += -Werror
+subdir-ccflags-y += -Wno-misleading-indentation
+subdir-ccflags-y += -Wno-unused-const-variable
+subdir-ccflags-y += -Wno-logical-not-parentheses
 subdir-ccflags-y += -I$(srctree)/arch/arm/mach-tegra
 
 obj-$(CONFIG_USB_SUPPORT)               += tegra_usb_pmc.o
